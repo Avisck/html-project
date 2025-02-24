@@ -1,0 +1,151 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body background for contrast */
+body {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Define A4 page size and styling */
+.page {
+  width: 210mm;
+  height: 297mm;
+  background: white;
+  padding: 15mm; /* Reduced padding to ensure content fits */
+  box-shadow: 0 0 5mm rgba(0, 0, 0, 0.1);
+  font-family: "Noto Sans Devanagari", sans-serif; /* Nepali font, ensure it's installed or use fallback */
+  font-size: 10pt; /* Reduced font size to fit more content */
+  line-height: 1.4; /* Adjusted line height for compactness */
+  color: #333;
+  overflow: hidden; /* Prevents content from spilling out */
+}
+
+/* Styling for print */
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background-color: white;
+    display: block;
+    margin: 0;
+  }
+  .page {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+    padding: 15mm;
+  }
+  #a4-table-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  #a4-table {
+    width: 100%;
+  }
+}
+
+/* Header styling */
+.header {
+  text-align: left;
+  margin-bottom: 5mm;
+}
+
+.header h1 {
+  font-size: 12pt; /* Reduced font size for header */
+  font-weight: bold;
+}
+
+.header .subheader {
+  font-size: 10pt;
+  font-weight: bold;
+  margin-top: 2mm;
+}
+.subheader {
+  font-size: 10pt;
+  font-weight: bold;
+  margin-top: 2mm;
+}
+
+/* Table styling */
+.table-section {
+  margin-top: 1mm; /* Reduced margin for tighter spacing */
+}
+
+.school-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 5mm; /* Reduced margin for tighter spacing */
+  font-size: 10pt;
+  margin-top: 5mm; /* Ensure tables match page font size */
+}
+
+.school-table th,
+.school-table td {
+  border: 1px solid #000;
+  padding: 3mm; /* Reduced padding for compactness */
+  text-align: center;
+}
+
+.school-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.sub-table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.sub-table th,
+.sub-table td {
+  border: 1px solid #000;
+  padding: 2mm; /* Reduced padding for compactness */
+  text-align: center;
+}
+
+.sub-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+.pageno {
+  text-align: right;
+  align-items: end;
+  margin-top: 25px;
+  font-weight: lighter;
+}
+.inputcheck {
+  font-weight: 600;
+  margin-bottom: 1mm;
+}
+#a4-table-container {
+  width: 100%;
+  max-width: 790px;
+  margin: auto;
+  
+  
+}
+
+#a4-table th,
+#a4-table td {
+  border: 1px solid black;
+  padding: 15px 3px;
+  text-align: left;
+  word-wrap: break-word;
+  
+}
+#a4-table {
+  width: 100%;
+  border-collapse: collapse;
+}
