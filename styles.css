@@ -12,6 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+
 }
 
 /* Define A4 page size and styling */
@@ -25,8 +27,22 @@ body {
   font-size: 10pt; /* Reduced font size to fit more content */
   line-height: 1.4; /* Adjusted line height for compactness */
   color: #333;
+ position: relative;
   overflow: hidden; /* Prevents content from spilling out */
 }
+
+
+/* Page number styling */
+.pageno {
+  position: absolute;
+
+  bottom: 10mm;
+  right: 10mm;
+  font-size: 10pt;
+  font-weight: normal;
+
+}
+
 
 /* Styling for print */
 @page {
@@ -46,6 +62,7 @@ body {
     width: 210mm;
     height: 297mm;
     padding: 15mm;
+   
   }
   #a4-table-container {
     width: 100%;
@@ -65,6 +82,82 @@ body {
 .header h1 {
   font-size: 12pt; /* Reduced font size for header */
   font-weight: bold;
+}
+.header h2{
+  margin-bottom: 10px;
+    text-align: center;
+
+}
+
+
+form h2,
+form h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 11pt;
+}
+
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  font-size: 11pt;
+}
+
+.radio-group label {
+  width: 40%;
+  /* Changed from 48% for flexibility */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* Added for spacing between radio and text */
+}
+
+
+
+.form-options {
+  display: flex;
+  flex-direction: row;
+  font-size: 12pt;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.frontHeader {
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 5px;
+  /* Added for consistent spacing */
+}
+
+.form-details {
+  font-size: 12pt;
+}
+
+.form-options {
+  display: flex;
+  flex-direction: row;
+  font-size: 12pt;
+}
+
+.frontDetails {
+  font-size: 11pt;
+  border-bottom: 2px solid;
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
 .header .subheader {
