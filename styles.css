@@ -114,7 +114,7 @@ form h3 {
 }
 
 .radio-group label {
-  width: 40%;
+  width: 45%;
   /* Changed from 48% for flexibility */
   display: flex;
   align-items: center;
@@ -217,6 +217,7 @@ label {
 .inputcheck {
   font-weight: 600;
   margin-bottom: 1mm;
+  font-size: 11pt ;
   
 }
 .a4-table-container {
