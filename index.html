@@ -982,26 +982,16 @@
           </h1>
         </header>
         <main>
-          <p class="inputcheck">
-            <input type="radio" value=" परिवारिक समस्याः (छ होइन भन्ने गरी)" />
-            परिवारिक समस्याः (छ होइन भन्ने गरी)
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="परिवारको आर्थिक अवस्था कमजोर" />
-            परिवारको आर्थिक अवस्था कमजोर
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="बाल बिबाहको कारण " /> बाल बिबाहको कारण
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="बाल श्रमको कारण" /> बाल श्रमको कारण
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="साथी भाइको लहैलहैमा" /> साथी भाइको
-            लहैलहैमा
-          </p>
-          <p class="inputcheck"><input type="radio" value="अन्य" /> अन्य</p>
-
+     
+            <div class="radio-group">
+              <label><input type="radio" name="dropout_reason" value="family_problems"> पारिवारिक समस्या (घर झैझगडा)</label>
+              <label><input type="radio" name="dropout_reason" value="no_family_problems"> परिवारको आर्थिक अवस्था कमजोर</label>
+              <label><input type="radio" name="dropout_reason" value="child_marriage"> बाल विवाहको कारण</label>
+              <label><input type="radio" name="dropout_reason" value="child_labor"> बाल श्रमको कारण</label>
+              <label><input type="radio" name="dropout_reason" value="peer_influence"> साथी भाइको लहैलहैमा</label>
+              <label><input type="radio" name="dropout_reason" value="other"> अन्य</label>
+            </div>
+       
           <table class="school-table">
             <thead>
               <tr>
@@ -1033,19 +1023,18 @@
               पाएको/नपाएको? ?
             </h1>
           </div>
-          <p class="inputcheck"><input type="radio" value="पाएको" /> पाएको</p>
-          <p class="inputcheck">
-            <input type="radio" value="नपाएको" /> नपाएको :
-          </p>
-          <br />
+          <div class="radio-group">
+            <label><input type="radio" name="skill_training" value="received"> पाएको</label>
+            <label><input type="radio" name="skill_training" value="not_received"> नपाएको</label>
+          </div>
           <h3>यदि पाएको भए</h3>
           <br />
-          <p class="inputcheck">
-            <input type="radio" value="सिकर्मी/डकर्मी" /> सिकर्मी/डकर्मी
-            <input type="radio" value="ड्राइभिङ्" /> ड्राइभिङ्
-            <input type="radio" value="कृषि " /> कृषि
-            <input type="radio" value="अन्य भए खुलाउने" /> अन्य भए खुलाउने
-          </p>
+          <div class="radio-group">
+            <label><input type="radio" name="training_type" value="carpentry"> सिकर्मी/डकर्मी</label>
+            <label><input type="radio" name="training_type" value="driving"> ड्राइभिङ</label>
+            <label><input type="radio" name="training_type" value="agriculture"> कृषि</label>
+            <label><input type="radio" name="training_type" value="other"> अन्य भए खुलाउने</label>
+          </div>
           <br />
 
           <table class="school-table">
@@ -1077,32 +1066,19 @@
               आवद्ध हुनुहुन्छ ?
             </h1>
           </div>
-
-          <p class="inputcheck">
-            <input type="radio" value="सामुदायिक संरक्षा" /> सामुदायिक संरक्षा (
-            )
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="कृषक समूह" /> कृषक समूह ( )
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="सामुदायिक बन उपभोक्ता समूह" /> सामुदायिक
-            बन उपभोक्ता समूह ( )
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="सहकारी संस्था" /> सहकारी संस्था ( )
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="टोल विकास समिति" /> टोल विकास संस्था ( )
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="बाल अधिकार समिति" /> बाल अधिकार समिति ( )
-          </p>
-          <p class="inputcheck">
-            <input type="radio" value="कुनै पनि नरहेको" /> कुनै पनि नरहेको ( )
-          </p>
-          <p class="inputcheck"><input type="radio" value="अन्य" /> अन्य ( )</p>
+          <div class="radio-group">
+            <label><input type="radio" name="community_involvement" value="community_security"> सामुदायिक संस्था</label>
+            <label><input type="radio" name="community_involvement" value="farmer_group"> कृषक समूह</label>
+            <label><input type="radio" name="community_involvement" value="forest_group"> सामुदायिक वन उपभोक्ता समूह</label>
+            <label><input type="radio" name="community_involvement" value="cooperative"> सहकारी संस्था</label>
+            <label><input type="radio" name="community_involvement" value="toll_development"> टोल विकास समिति</label>
+            <label><input type="radio" name="community_involvement" value="child_rights"> बाल अधिकार समिति</label>
+            <label><input type="radio" name="community_involvement" value="none"> कुनै पनि नरहेको</label>
+            <label><input type="radio" name="community_involvement" value="other"> अन्य</label>
+          </div>
+         
         </main>
+        <div class="pageno">७</div>
       </div>
 
       <!-- page no 8 -->
@@ -1360,10 +1336,10 @@
                 बसेका छन्
               </h1>
               <br />
-              <input type="radio" value="छन् " name="33" />
-              <label for="छन्" class="inputcheck">छन्()</label>
-              <input type="radio" value="छैनन् " name="33" />
-              <label for="छैनन्" class="inputcheck">छैनन्()</label>
+              <div class="radio-group">
+                <label><input type="radio" name="child_labor_away" value="yes"> छन् ( )</label>
+                <label><input type="radio" name="child_labor_away" value="no"> छैनन् ( )</label>
+              </div>
             </form>
           </div>
 
@@ -1382,10 +1358,10 @@
           </h3>
           <br />
 
-          <input type="radio" value="छन् " name="33.2" />
-          <label for="छ" class="inputcheck">छ()</label>
-          <input type="radio" value="छैनन् " name="33.2" />
-          <label for="छैन" class="inputcheck">छैन()</label>
+            <div class="radio-group">
+              <label><input type="radio" name="child_labor_here" value="yes"> छन् ( )</label>
+              <label><input type="radio" name="child_labor_here" value="no"> छैनन् ( )</label>
+            </div>
           <br />
 
           <h4><u>यदि छन् भने</u></h4>
@@ -1467,12 +1443,14 @@
         </header>
         <main>
           <form action="34">
-            <input type="radio" name="34" /> दाईजोसम्बन्धी ( )
-            <input type="radio" name="34" /> खबहुविवाह ( )
-            <input type="radio" name="34" /> घरायसी हिंसा ( )
-            <input type="radio" name="34" /> बालविवाह( )
-            <input type="radio" name="34" /> बलात्कार ( )
-            <input type="radio" name="34" /> अन्य ( )
+            <div class="radio-group">
+              <label><input type="radio" name="violence_incidents" value="dowry"> क) दाइजोसम्बन्धी ( )</label>
+              <label><input type="radio" name="violence_incidents" value="polygamy"> ख) बहुविवाह ( )</label>
+              <label><input type="radio" name="violence_incidents" value="domestic_violence"> ग) घरायसी हिंसा ( )</label>
+              <label><input type="radio" name="violence_incidents" value="child_marriage"> घ) बालविवाह ( )</label>
+              <label><input type="radio" name="violence_incidents" value="rape"> ङ) बलात्कार ( )</label>
+              <label><input type="radio" name="violence_incidents" value="other"> च) अन्य ( )</label>
+            </div>
           </form>
 
           <div class="header">
@@ -1482,22 +1460,23 @@
             </h1>
 
             <form action="">
-              <input type="radio" name="q35" value="yes" /> क) घरपरिवार सँगै
-              <input type="radio" name="q35" value="yes" />ख) घर बाहिर
-              <input type="radio" name="q35" value="yes" /> ग)
-              अन्य...............
+              <div class="radio-group">
+                <label><input type="radio" name="menstruation_condition" value="with_family"> क) घरपरिवार सँगै ( )</label>
+                <label><input type="radio" name="menstruation_condition" value="outside"> ख) घर बाहिर ( )</label>
+                <label><input type="radio" name="menstruation_condition" value="other"> ग) अन्य </label>
+              </div>
             </form>
           </div>
 
           <h3>
-            ३६. तपाईको परिवारका कुनै बालबालिकाले बालगृह वा कुनै संस्थामा वेवस्था
-            वेवका छन ?
+            ३६. तपाईंको परिवारका कुनै बालबालिका बालगृह वा कुनै संस्थामा बसेका छन् ?
           </h3>
-
+          
           <form>
-            <input type="radio" name="q15_yesno" value="yes" />(क) छन ( )
-
-            <input type="radio" name="q15_yesno" value="no" />(ख) छैनन ( )
+            <div class="radio-group">
+              <label><input type="radio" name="institutional_care" value="yes">  छन् ( )</label>
+              <label><input type="radio" name="institutional_care" value="no">  छैनन् ( )</label>
+            </div>
           </form>
 
           <h3><u>यदी छन भने </u></h3>
@@ -1540,10 +1519,10 @@
             </h1>
           </div>
           <form>
-            <p>
-              <input type="radio" name="q19_yesno" value="yes" />(क) छन ()
-              <input type="radio" name="q19_yesno" value="no" /> (ख) छैनन ()
-            </p>
+            <div class="radio-group">
+              <label><input type="radio" name="street_children" value="yes">  छन् ( )</label>
+              <label><input type="radio" name="street_children" value="no">  छैनन् ( )</label>
+            </div>
           </form>
 
           <h3><u>यदी छ भने </u></h3>
@@ -1581,8 +1560,10 @@
             </h1>
           </div>
           <form>
-            <input type="radio" name="q20_yesno" value="yes" /> (क) छ ()
-            <input type="radio" name="q20_yesno" value="no" /> (ख) छैन ()
+            <div class="radio-group">
+              <label><input type="radio" name="substance_abuse" value="yes"> क) छन् ( )</label>
+              <label><input type="radio" name="substance_abuse" value="no"> ख) छैनन् ( )</label>
+            </div>
           </form>
           
         </main>
@@ -1617,6 +1598,7 @@
               <td> </td>
             </tr>
           </table>
+<<<<<<< HEAD
 
           <div class="frontHeader">
             ३६. तपाईंको परिवारका सदस्यहरु कुन कुन पेशा (रोजगारी) मा संलग्न
@@ -1866,6 +1848,25 @@
             भने तलको विवरण दिनुहोस्: (स्वदेश/विदेश)
           </h2>
           <table class="school-table">
+=======
+<h3>यदि कुलतमा लागेको भए बाल सुधार गृहमा पठाउनुभएको छ ?</h3>
+<br>
+<div class="radio-group">
+  <label><input type="radio" name="substance_abuse" value="yes">  छ ( )</label>
+  <label><input type="radio" name="substance_abuse" value="no">  छैनन् ( )</label>
+</div>
+<br>
+
+          
+        </main>
+        <div class="header">
+          <h1>
+        ३९. तपाईंको परिवारका सदस्यहरु कुन कुन पेशा (रोजगारी) मा संलग्न हुनुहुन्छ ?
+        </h1>
+        </div>
+        <div class="a4-table-container">
+          <table class="a4-table">
+>>>>>>> 703a715b87f06afdcf89d2418f9b5f245a4b4e36
             <thead>
               <tr>
                 <th colspan="4">विदेश गएकोको संख्या</th>
