@@ -212,17 +212,13 @@ label {
   background-color: #f0f0f0;
   font-weight: bold;
 }
-.pageno {
-  text-align: right;
-  align-items: end;
-  margin-top: 25px;
-  font-weight: lighter;
-}
+
 .inputcheck {
   font-weight: 600;
   margin-bottom: 1mm;
+  
 }
-#a4-table-container {
+.a4-table-container {
   width: 100%;
   max-width: 790px;
   margin: auto;
@@ -230,15 +226,15 @@ label {
   
 }
 
-#a4-table th,
-#a4-table td {
+.a4-table th,
+.a4-table td {
   border: 1px solid black;
   padding: 15px 3px;
   text-align: left;
   word-wrap: break-word;
   
 }
-#a4-table {
+.a4-table {
   width: 100%;
   border-collapse: collapse;
 }
