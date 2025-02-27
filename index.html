@@ -7,6 +7,515 @@
   </head>
   <body>
     <div class="document">
+      <div class="page">
+        <header class="header">
+            <h2>
+                कावासोती नगरपालिका<br>
+                नगर कार्यपालिकाको कार्यालय, नवलपरासी (ब.सु.पु.)<br>
+                बालमैत्री स्थानीय शासन<br>
+                <u>घरधुरी सर्भेक्षण फारम</u>
+            </h2>
+        </header>
+        <div class="frontHeader">
+            घरधुरी सर्भेक्षण फारम परिवार र व्यक्तिको गणना गर्ने अवसर बसोबास गरेको ठाँउबाट गर्नुपर्दछ । उत्तर लेख्दा चिन्ह
+            लगाउने ठाँउमा उपयुक्त संकेतमा गोलो चिन्ह (O) लगाउनु पर्छ । <i> लेख्नुपर्ने भएमा स्पष्ट अक्षर वा अंक लेख्न पर्दछ । कोडहर
+            लेख्नु पर्ने ठाँउमा अङ्क वा अक्षरमा लेख्नुपर्दछ ।
+            </i><br>
+            <i>
+                यहाँहरुले दिनुभएको जानकारी कावासोती नगरपालिकालाई बालमैत्री घोषणाका लागि नगरका बालबालिकाको बस्तुगत विवरण
+                तयारी प्रयोजनार्थ मात्र प्रयोग गरिनेछ । यहाँले दिनुभएको सूचना गोप्य राखिनेछ ।
+            </i>
+        </div>
+        <div class="frontHeader">नोट:</div>
+        <div class="frontDetails">
+            <p>१. परिवार भन्नाले एउटै छाना मुनी बसेका एउटै भान्सामा खाना खाने सदस्यहरुलाई जनाउँछ ।
+                परिवारको कुनै सदस्य ६ महिना भन्दा बढी अवधिको लाधि अन्यत्र गई बसोबास गरेको छ भने त्यस्ता
+                सदस्यहरुलाई यहाँ गणना नगर्ने ।</p>
+            <p>२. नगरपालिका क्षेत्रलभत्रमा स्थायी र अस्थायी बसोबास गर्ने सबै घर परीवारको विवरण भर्नु पर्नेछ ।</p>
+            <p>३. कुनै एउटै परिवार दईु वटा क्षेत्रमा बसोबास गर्ने गरेको तर एउटै भान्सामा खाना खाने गरेको छ भने कुनै एक
+                स्थानलाई आधार मानी एक पटक मात्र फारम भर्नुपर्नेछ ।</p>
+            <p>४. बालबालिका भन्नाले १८ वर्ष उमेर पूरा नभएको ब्यक्तिहरुलाई जनाउनेछ ।</p>
+        </div>
+        <form>
+            <div class="form-details">
+                <p>वडा नं. ३ टोल कोड नं. ............ टोलको नाम ............</p>
+                <p>घर क्र.सं नम्बर ......... परिवार क्र. संख्या .........</p>
+            </div>
+            <div class="frontHeader">१. परिवार मूलीको नाम ................ ................. .................</div>
+            <div class="form-group">
+                <p>लिंग :</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> पुरुष</label>
+                    <label><input type="radio" name="gender" value="female"> महिला</label>
+                    <label><input type="radio" name="gender" value="other"> अन्य (LGBTQ)</label>
+                </div>
+            </div>
+            <div class="frontHeader">२. परिवार मुलिको जातजाति: .......</div>
+            <div class="frontHeader">३. धर्म: ........</div>
+            <div class="frontHeader">४. मातृभाषा: ............</div>
+            <div class="form-group">
+                <div class="frontHeader">५. शौचालयको अवस्था</div>
+                <div class="radio-group">
+                    <label><input type="radio" name="toilet" value="illiterate"> कच्ची</label>
+                    <label><input type="radio" name="toilet" value="literate"> पक्की</label>
+                    <label><input type="radio" name="toilet" value="primary"> सेफ्टी ट्यांकी जडान भएको</label>
+                    <label><input type="radio" name="toilet" value="pri"> शौचालय नभएको</label>
+                    <label><input type="radio" name="toilet" value="prima"> ढलमा शौचालय जडान भएको</label>
+                </div>
+            </div>
+            <div class="frontHeader">६. परिवारको मुख्य पेशा : (एक मात्र चिन्ह लगाउनु)</div>
+            <div class="radio-group">
+                <label><input type="radio" name="occupation" value="farming"> कृषि/पशुपालन/फलफूल खेती</label>
+                <label><input type="radio" name="occupation" value="business"> व्यापार व्यवसाय</label>
+                <label><input type="radio" name="occupation" value="service"> सेवा/नोकरी</label>
+                <label><input type="radio" name="occupation" value="labor"> ज्याला/मजदुरी</label>
+                <label><input type="radio" name="occupation" value="other"> अन्य</label>
+            </div>
+            <div class="frontHeader">७. तापीको परिवारको मुख्य आम्दानीको स्रोत के हो ?</div>
+            <div class="radio-group">
+                <label><input type="radio" name="income_source" value="farming"> कृषि</label>
+                <label><input type="radio" name="income_source" value="business"> व्यापार व्यवसाय</label>
+                <label><input type="radio" name="income_source" value="service"> सेवा/नोकरी</label>
+                <label><input type="radio" name="income_source" value="other"> अन्य</label>
+            </div>
+        </form>
+        <p class="pageno">१</p>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page">
+        <div class="frontHeader">८. तपाइको बार्षिक आम्दानीको स्रोतबाट जिविकोपार्जन</div>
+        <div class="radio-group">
+            <label><input type="radio" name="income" value="farming"> हुन्छ ?</label>
+            <label><input type="radio" name="income" value="business"> हुदैन ?</label>
+        </div>
+        <div class="frontHeader">९. परिवारको संख्या :- ........</div>
+        <div class="table-section">
+            <table class="school-table">
+                <thead>
+                    <tr>
+                        <th>उमेर समूह</th>
+                        <th>महिला</th>
+                        <th>पुरुष</th>
+                        <th>अन्य (LGBTQ)</th>
+                        <th>जम्मा</th>
+                        <th>अपाङ्गता भएका बालबालिका संख्या</th>
+                        <th>अपाङ्गता भएका बालबालिका भएमा कस्ता किसिमका अपाङ्गता खुलाउने</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>१ वर्ष भन्दा मुनि (१२ महिना सम्मको)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>१-२ वर्ष समूह (१२ महिना भन्दा माथि २४ महिना सम्मको)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>२-३ वर्ष समूह (२४ महिना भन्दा माथि ३६ महिना सम्मको)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>३-४ वर्ष समूह (३६ महिना भन्दा माथि ४८ महिना सम्मको)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>४-५ वर्ष समूह (४८ महिना भन्दा माथि ६० महिना सम्मको)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>५-१४ वर्ष समूह (६० महिना भन्दा माथि १४ वर्ष सम्मको)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>१४-१८ वर्ष समूह (१४ महिना भन्दा माथि १८ वर्ष सम्मको)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>१९-४५ वर्ष समूह</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>४६-६० वर्ष समूह</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>६१-७५ वर्ष समूह</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>७५ वर्ष भन्दा माथि</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>जम्मा</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="pageno">२</p>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page">
+        <div class="frontHeader"><u>स्वास्थ्यसंग सम्बन्धित</u></div>
+        <div class="frontHeader">१०. ६ महिना देखि पाँच वर्षमुनिका बालबालिकालाई वर्षको २ पटक भिटामिन ए, जुकाको औषधि खुवाएको र पुर्ण स्तनपानको विवरण</div>
+        <table class="school-table">
+            <thead>
+                <tr>
+                    <th>लिंग</th>
+                    <th>६ महिना देखि ५ वर्ष मुनिको जम्मा बालबालिकाको संख्या</th>
+                    <th>भिटामिन ए खुवाएका बालबालिकाको संख्या</th>
+                    <th>१ देखि ५ वर्ष सम्मका बालबालिकाको संख्या</th>
+                    <th>जुकाको औषधी खुवाएका बालबालिकाको संख्या</th>
+                    <th>६ महिना मुनिको बालबालिका भए पुर्ण स्तनपान गराएको नगराएको विवरण</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>बालक संख्या</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>बालिका संख्या</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>अन्य</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>जम्मा</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="frontHeader">क) ५ वर्ष मुनिको बालबालिका नभए यहाँ ठिक लगाउने ( )</div>
+        <div class="frontHeader">११. १६ महिना देखि २३ महिनासम्मका सबै बालबालिकाले नेपाल सरकारबाट प्रदान गर्ने सबै खोप लगाएको छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="vaccination" value="yes"> हो ( )</label>
+            <label><input type="radio" name="vaccination" value="no"> होइन ( )</label>
+            <label><input type="radio" name="vaccination" value="yesno"> १६ देखि २३ महिना मुनिको बालबालिका नभएको ( )</label>
+        </div>
+        <div class="frontHeader">१२. बितेको १ वर्षभित्रको तपाईंको परिवारमा रहेका गर्भवती महिलाको स्वास्थ्य अवस्था बारे जानकारी (सुत्केरी नियमित स्वास्थ्य जाँच) (ANC&PNC)</div>
+        <table class="school-table">
+            <thead>
+                <tr>
+                    <th>गर्भवती</th>
+                    <th>गर्भवतीको हालको विवरण (सुत्केरी भइनसकेको भए गर्भवति महिना, सुत्केरी भईसकेको भए सुत्केरी पश्चातको महिना)</th>
+                    <th>गर्भवती परीक्षण गरेको पटक (संख्या)</th>
+                    <th>आइरन चक्कीको प्रयोग (चक्कि संख्या)</th>
+                    <th>टि. डी. खोप लगाएको संख्या</th>
+                    <th>प्रसूति कहाँ भएको (तलको कोठामा नम्बर लेख्ने)<br>१. स्वास्थ्य संस्थामा, २. घरमा स्वास्थ्य कर्मीको सहयोगमा, ३. घरमा स्वास्थ्य कर्मीको सहयोग बिना, ४. अन्य .....</th>
+                    <th>गर्भवती पश्चात सुत्केरी र नवजात शिशुको परिक्षण गरेको संख्या</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>गर्भवती १</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>गर्भवती २</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>गर्भवती ३</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pageno">३</p>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="page">
+        <div class="frontHeader">१३. तपाईंको परिवारमा एच्आईभी संक्रमित आमाबाट जन्मेका बालबालिका छन् ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="crisis_born" value="yes"> हो ( )</label>
+            <label><input type="radio" name="crisis_born" value="no"> होइन ( )</label>
+        </div>
+        <p>यदि छन् भने उनीहरूले ARV Prophylaxis पाएका छन् ?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="arv_prophylaxis" value="yes"> छन् ( )</label>
+            <label><input type="radio" name="arv_prophylaxis" value="no"> छैनन् ( )</label>
+        </div>
+        <div class="frontHeader">१४. बालबालिका सामान्य बिरामी पर्दा तुरुन्त उपचार गर्ने आर्थिक क्षमता छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="treatment" value="yes"> छ ( )</label>
+            <label><input type="radio" name="treatment" value="no"> छैन ( )</label>
+        </div>
+        <div class="frontHeader">१५. परिवारको कुनै सदस्य विरामी भएमा उपचारका लागि सबैभन्दा पहिला कहाँ जानुहुन्छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="reported" value="yes"> लामा, धामी, झाँक्री</label>
+            <label><input type="radio" name="reported" value="no"> परम्परागत वैद्य</label>
+            <label><input type="radio" name="reported" value="other"> स्थानीय स्वास्थ्य संस्था/चौकी</label>
+            <label><input type="radio" name="reported" value="hospital"> अस्पताल (निजी, सरकारी)</label>
+            <label><input type="radio" name="reported" value="other"> अन्य भए (खुलाउने) ...........</label>
+        </div>
+        <div class="frontHeader">१६. बितेको १ वर्षभित्र तपाईंको परिवारमा ५ वर्षमुनिका कुनै बालबालिकाको मृत्यु भएको छ</div>
+        <div class="radio-group">
+            <label><input type="radio" name="child_death" value="yes"> छ ( )</label>
+            <label><input type="radio" name="child_death" value="no"> छैन ( )</label>
+            <label><input type="radio" name="child_death" value="no"> ५ वर्ष मुनिको बालबालिका नभएको</label>
+        </div>
+        <p>यदि छ भने कतिजनाको मृत्यु भएको थियो र के कारणबाट मृत्यु भएको थियो ?</p>
+        <table class="school-table">
+            <thead>
+                <tr>
+                    <th>लिंग</th>
+                    <th>मृत्यु भएको जम्मा संख्या</th>
+                    <th>मृत्युको हुनको कारण</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>बालक</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>बालिका</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>अन्य</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>जम्मा</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="frontHeader">१७. तपाईको परिवारमा सुनौलो हजार दिनको आमा हुनुहुन्छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="grandmother" value="yes"> हुनुहुन्छ ( )</label>
+            <label><input type="radio" name="grandmother" value="no"> हुनुहुन्न ( )</label>
+        </div>
+        <p>यदि हुनुहुन्छ भने, सुनौलो हजार दिनका सदस्यहरु (श्रीमान, श्रीमती, सासु, बहुारी) बीच पोषिलो खानेकुरा र प्रजनन स्वास्थ्य
+        सम्बन्धी छलफल गर्नु भएको छ ?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="grandmother_health" value="yes"> छ ( )</label>
+            <label><input type="radio" name="grandmother_health" value="no"> छैन ( )</label>
+        </div>
+        <div class="frontHeader">१८. तपाईंको परिवारका १ वर्ष मुनिकाको मासिक र १ वर्ष भन्दामाथि ५ वर्षसम्मका बालबालिकाको त्रैमासिक रूपमा तौल लिने गरिएको छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="child_health" value="yes"> छ ( )</label>
+            <label><input type="radio" name="child_health" value="no"> छैन ( )</label>
+            <label><input type="radio" name="child_health" value="no"> ५ वर्ष मुनिको बालबालिका नभएको /१ वर्ष मुनिको बालबालिका नभएको ( )</label>
+        </div>
+        <p>छ भने पाँच वर्ष मुनिका बालबालिकाको तौल (वजन)</p>
+        <table class="school-table">
+            <thead>
+                <tr>
+                    <th>क्र.स.</th>
+                    <th>उमेर (महिना)</th>
+                    <th>कुपोषण (कम तौल) छ</th>
+                    <th>पोषणयुक्त (तिक तौल) छ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="pageno">४</p>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="page">
+        <table class="school-table">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="frontHeader">५ वर्ष मुनिका बालबालिकाले पोषिलो खाना (दिनको कम्तिमा ३ पटक दूध, लिटो, भात, फलफुल र सागसब्जी) खान पाउँछन् ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="nutrition" value="yes">पाउँछन् ( )</label>
+            <label><input type="radio" name="nutrition" value="no"> पाउँदैनन्( )</label>
+            <label><input type="radio" name="nutrition" value="other"> ५ वर्ष मुनिको बालबालिका नभएको</label>
+        </div>
+        <div class="frontHeader">२०. दुई बालबालिकाको चिन्ह भएको आयोडिनयुक्त नुन प्रयोग गर्ने गर्नुभएको छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="milk_sign" value="yes"> छ</label>
+            <label><input type="radio" name="milk_sign" value="no"> छैन </label>
+        </div>
+        <div class="frontHeader">२१. तपाईंको घरमा खाना खानु अगाडि, बच्चाको दिसा धोएपछि र शौचालय गएर आएपछि हात के ले धुनुहन्छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="hygiene" value="soap_water"> साबुन पानी</label>
+            <label><input type="radio" name="hygiene" value="tap_water"> खरानी पानी</label>
+            <label><input type="radio" name="hygiene" value="other">ढुंगा ढुङगा/माटो ( ) </label>
+            <label><input type="radio" name="hygiene" value="other">पानीमात्र </label>
+            <label><input type="radio" name="hygiene" value="other"> केही पनि नगर्ने</label>
+        </div>
+        <div class="frontHeader">२२. तपाईको परिवारको खानेपानीको मुख्य स्रोत कुन हो ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="water_source" value="pipe_water"> पाइपको धाराको पानी प्रयोग गर्ने</label>
+            <label><input type="radio" name="water_source" value="tube_well"> ट्युवेल</label>
+            <label><input type="radio" name="water_source" value="well_spring"> इनार, मुल, कुवाको पानी प्रयोग गर्ने</label>
+            <label><input type="radio" name="water_source" value="river_canal"> नदी, कुलो, नहर, पोखरीको पानी प्रयोग गर्ने</label>
+            <label><input type="radio" name="water_source" value="rain-water"> आकाशे पानी संकलन गरी प्रयोग गर्ने</label>
+            <label><input type="radio" name="water_source" value="other">अन्य.....(खुलाउने) </label>
+        </div>
+        <div class="frontHeader">२३. खानेपानीको घरायसी रूपमा कसरी प्रशोधन गर्ने गरिएको छ ?</div>
+        <div class="radio-group">
+            <label><input type="radio" name="health_check" value="water_filter">प्रणालीबाट नै सुरक्षित खानेपानी आउने गरेको</label>
+            <label><input type="radio" name="health_check" value="boiled_water"> सधै उमालेर प्रयोग गर्ने गरेको </label>
+            <label><input type="radio" name="health_check" value="other"> सुरक्षित फिल्टर जडान गरिएको</label>
+            <label><input type="radio" name="health_check" value="none">केहि नरहेको </label>
+        </div>
+        <div class="frontHeader"><u><i>शिक्षासँग सम्बन्धित</i></u></div>
+        <div class="frontHeader">२४. तपाईंको परिवारमा बाल विकास केन्द्र वा पूर्व प्रा.वि. तहमा जाने ३ देखि ४ वर्षसम्मका बालबालिका संख्या कति छ</div>
+        <table class="school-table">
+            <thead>
+                <tr>
+                    <th colspan="4">बाल विकास जाने (३ देखि ४ वर्षको मात्र)</th>
+                    <th colspan="4">बाल विकास नजाने (३ देखि ४ वर्षको मात्र)</th>
+                </tr>
+                <tr>
+                    <th>बालक</th>
+                    <th>बालिका</th>
+                    <th>अन्य (LGBTQ)</th>
+                    <th>जम्मा</th>
+                    <th>बालक</th>
+                    <th>बालिका</th>
+                    <th>अन्य (LGBTQ)</th>
+                    <th>जम्मा</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="frontHeader">३ देखि ४ वर्ष मुनिको बालबालिका नभएको भए ( )</div>
+        <p class="pageno">५</p>
+    </div>
+
       <!-- page no 6 -->
       <div class="page">
         <header class="header">
