@@ -238,3 +238,23 @@ label {
   width: 100%;
   border-collapse: collapse;
 }
+.a4-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+#last-table{
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+#last-table th{
+  font-weight: bold;
+  text-align: left;
+  
+}
+#last-table td, #last-table th{
+border: none;
+padding: 5mm;
+
+}
